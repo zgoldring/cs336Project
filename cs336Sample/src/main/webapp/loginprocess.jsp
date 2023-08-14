@@ -32,8 +32,12 @@
       } catch (ClassNotFoundException | SQLException e) {
         e.printStackTrace();
       }
+      //hardcode admin username and password
+      if(username == "admin@gmail.com" && password == "adminpassword"){
+    	  response.sendRedirect("adminWelcome.jsp");
+      }
 
-      // If the user credentials are valid, redirect to the welcome screen, if user is an admin go to admin page
+      // If the user credentials are valid, redirect to the welcome screen
       if (isValidUser) {
         session.setAttribute("username", username);
         response.sendRedirect("welcome.jsp");
