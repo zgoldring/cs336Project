@@ -8,12 +8,21 @@
 </head>
 <body>
 <br>
-		<form method="get" action="auctins.jsp">
+		<form method="get" action="buy.jsp">
 			<table>
 				<tr>    
 				<tr>
 			</table>
 			<input type="submit" value="buy">
+		</form>
+	<br>
+	<br>
+		<form method="get" action="sell.jsp">
+			<table>
+				<tr>    
+				<tr>
+			</table>
+			<input type="submit" value="sell">
 		</form>
 	<br>
 	<br>
@@ -23,15 +32,6 @@
 				<tr>
 			</table>
 			<input type="submit" value="back">
-		</form>
-	<br>
-	<br>
-		<form method="get" action="auctins.jsp">
-			<table>
-				<tr>    
-				<tr>
-			</table>
-			<input type="submit" value="sell">
 		</form>
 	<br>
 </body>

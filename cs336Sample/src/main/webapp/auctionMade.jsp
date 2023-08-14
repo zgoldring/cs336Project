@@ -1,14 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Login Result</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Auction Has Been Created!</title>
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <h1>Login Result</h1>
     <% 
       String username = request.getParameter("username");
@@ -33,7 +32,7 @@
         e.printStackTrace();
       }
 
-      // If the user credentials are valid, redirect to the welcome screen, if user is an admin go to admin page
+      // If the user credentials are valid, redirect to the welcome screen
       if (isValidUser) {
         session.setAttribute("username", username);
         response.sendRedirect("welcome.jsp");

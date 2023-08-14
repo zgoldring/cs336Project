@@ -39,13 +39,23 @@
 	
 %>
 	<br>
+		<form method="get" action="auctions.jsp">
+			<table>
+				<tr>    
+				<tr>
+			</table>
+			<input type="submit" value="auctions">
+		</form>
+	<br>
+	<br>
 		<form method="get" action="HelloWorld.jsp">
 			<table>
 				<tr>    
 				<tr>
 			</table>
-			<input type="submit" value="Logout">
+			<input type="submit" value="logout">
 		</form>
 	<br>
+	
 </body>
 </html>

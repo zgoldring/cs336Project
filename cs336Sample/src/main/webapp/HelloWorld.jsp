@@ -27,6 +27,16 @@
 			<input type="submit" value="Log in!">
 		</form>
 	<br>
+	<br>
+		<form method="get" action="newAccount.jsp">
+			<table>
+				<tr>    
+				<tr>
+			</table>
+			<input type="submit" value="Create New Account">
+		</form>
+	<br>
+	
 	
 
 </body>
