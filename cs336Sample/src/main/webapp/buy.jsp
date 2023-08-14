@@ -12,13 +12,16 @@ Please enter details for your auction:
 show all active auctions here
 <br/>
 	<br>
-		<form method="get" action="welcome.jsp">
+		<form method="get" action="buyersSearchProcess.jsp">
 			<table>
 				<tr>    
 					<td>Vehicle Type</td><td><input type="text" name="vehicle"></td>
 				</tr>
 				<tr>
-					<td>Style</td><td><input type="text" name="style"></td>
+					<td>Make</td><td><input type="text" name="make"></td>
+				</tr>
+				<tr>
+					<td>Manufacturer</td><td><input type="text" name="manufacturer"></td>
 				</tr>
 				<tr>
 					<td>Accessories</td><td><input type="text" name="accessories"></td>
@@ -29,6 +32,9 @@ show all active auctions here
 				<tr>
 				<tr>
 					<td>Secret Maximum</td><td><input type="text" name="secret_max"></td>
+				</tr>
+				<tr>
+					<td>Fuel</td><td><input type="text" name="fuel"></td>
 				</tr>
 			</table>
 			<input type="submit" value="Search">

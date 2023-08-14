@@ -11,7 +11,7 @@
 <body>
 Please enter details for your auction:
 	<br>
-		<form method="get" action="auctionMade.jsp">
+		<form method="get" action="makingAuctionProcess.jsp">
 			<table>
 				<tr>    
 					<td>Vehicle Type</td><td><input type="text" name="vehicle"></td>
@@ -50,7 +50,7 @@ Please enter details for your auction:
 					<td>End Time (hh:mm)</td><td><input type="text" name="end_time"></td>
 				</tr>
 				<tr>
-					<td>Description</td><td><input type="text" name="s_date"></td>
+					<td>Description</td><td><input type="text" name="description"></td>
 				</tr>
 			</table>
 			<input type="submit" value="Create Auction">

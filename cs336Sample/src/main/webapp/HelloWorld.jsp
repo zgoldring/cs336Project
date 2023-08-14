@@ -15,7 +15,7 @@
 							  
 	Please enter email and password:
 	<br>
-		<form method="get" action="welcome.jsp">
+		<form method="get" action="loginprocess.jsp">
 			<table>
 				<tr>    
 					<td>Enter Email</td><td><input type="text" name="email"></td>

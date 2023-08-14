@@ -4,19 +4,27 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Login Result</title>
+  <title>Search Result</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Login Result</h1>
+    <h1>Auction has been made</h1>
     <% 
-      String username = request.getParameter("username");
-      String password = request.getParameter("password");
-      boolean isValidUser = false;
+    //get params from buy page
+      String vehicle = request.getParameter("vehicle");
+      String Make = request.getParameter("make");
+      String Manufacturer = request.getParameter("manufacturer");
+      String fuel = request.getParameter("fuel");
+      String accessories = request.getParameter("accessories");
+      String listing_price = request.getParameter("listing_price");
+      String secret_max = request.getParameter("secret_max");
+      boolean isSearched = false;
 
       // Perform database operations
       //currently does not work as database is not useable yet, need to fix ASAP
+      //this query will have to insert the auction into the database
+      	// query still needs to be created
       try {
         Connection conn = DBConnectionManager.getConnection();
         String query = "SELECT * FROM users WHERE username=? AND password=?";
@@ -25,7 +33,7 @@
         ps.setString(2, password);
         ResultSet rs = ps.executeQuery();
         if (rs.next()) {
-          isValidUser = true;
+        	isCreated = true;
         }
         rs.close();
         ps.close();
@@ -35,17 +43,11 @@
       }
      
       
-      //hardcode admin username and password
-      if(username == "admin@gmail.com" && password == "adminpassword"){
-    	  session.setAttribute("username", username);
-    	  response.sendRedirect("adminWelcome.jsp");
-      }
-   // If the user credentials are valid, redirect to the welcome screen
-      	else if (isValidUser) {
-        session.setAttribute("username", username);
-        response.sendRedirect("welcome.jsp");
+   // If the auction has been made, go to auction
+      	if (isCreated) {
+        response.sendRedirect("buyersSearchResults.jsp");
       } else {
-        out.println("Invalid credentials. Please try again.");
+        out.println("Invalid auction. Please try again.");
       }
     %>
   </div>
