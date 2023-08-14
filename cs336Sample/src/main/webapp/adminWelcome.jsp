@@ -8,12 +8,21 @@
 </head>
 <body>
 <br>
-		<form method="get" action="HelloWorld.jsp">
+		<form method="get" action="newCustomerRep.jsp">
 			<table>
 				<tr>    
 				<tr>
 			</table>
-			<input type="submit" value="logout">
+			<input type="submit" value="Create Customer Rep">
+		</form>
+	<br>
+	<br>
+		<form method="get" action="salesReport.jsp">
+			<table>
+				<tr>    
+				<tr>
+			</table>
+			<input type="submit" value="Sales Reports">
 		</form>
 	<br>
 </body>
